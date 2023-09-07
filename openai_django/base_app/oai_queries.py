@@ -12,7 +12,7 @@ else:
 
 def get_completion(prompt):
     query = openai.ChatCompletion.create(
-        model='gpt-3.5-turbo',
+        model='gpt-4',
         messages=[{"role": "user", "content": prompt }]
     )
     response = query.get('choices')[0]['message']['content']
